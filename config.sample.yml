@@ -21,7 +21,7 @@ port: 3000
 # - sqlite = SQLite 3.9 or later
 
 db:
-  type: postgres
+  type: sqlite
 
   # PostgreSQL / MySQL / MariaDB / MS SQL Server only:
   host: localhost
@@ -47,7 +47,7 @@ db:
   schema: public
 
   # SQLite only:
-  storage: path/to/database.sqlite
+  storage: /wiki/db/database.sqlite
 
 #######################################################################
 # ADVANCED OPTIONS                                                    #
@@ -136,7 +136,7 @@ ha: false
 # Data Path
 # ---------------------------------------------------------------------
 # Writeable data path used for cache and temporary user uploads.
-dataPath: ./data
+dataPath: /wiki/data
 
 # ---------------------------------------------------------------------
 # Body Parser Limit
